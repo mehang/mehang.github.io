@@ -11,7 +11,7 @@ $("#btn_dialer").click(function(){
     $("#content_add").hide();
     $(this).css("background", "white");
     $("#btn_contact_list").css("background", "#E6E6E6");
-    $("#btn_contact_list").css("background", "#E6E6E6");
+    $("#btn_contact_add").css("background", "#E6E6E6");
 });
 $("#btn_contact_list").click(function(){
     $("#content_dialer").hide();
