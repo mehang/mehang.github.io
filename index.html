@@ -19,7 +19,7 @@
 <div id="content">
     <div class="content-div" id="content_dialer">
         <h1>Dialer</h1>
-        <form class="pure-form pure-form-stacked" id="frm-dial">
+        <form class="pure-form pure-form-stacked" id="frm-dial" onsubmit="return false;">
             <input class="dial-content-div" id="dial-number"/>
             <div class="dial-btn-div">
                 <button class="btn-dial pure-button" id="btn-1">1</button>
@@ -37,9 +37,9 @@
                 <button class="btn-dial pure-button" id="btn-9">9</button>
             </div>
             <div class="dial-btn-div">
-                <button class="btn-dial pure-button" id="btn-*">*</button>
+                <button class="btn-dial pure-button" id="btn-astr">*</button>
                 <button class="btn-dial pure-button" id="btn-0">0</button>
-                <button class="btn-dial pure-button" id="btn-#">#</button>
+                <button class="btn-dial pure-button" id="btn-hash">#</button>
             </div>
             <div class="dial-func-btns">
                 <button class="dial-func-btn pure-button" id="btn-dial">Dial</button>
@@ -72,7 +72,7 @@
     </div>
     <div class="content-div" id="content_add">
         <h1>Add Contact</h1>
-        <form class="pure-form pure-form-stacked" id="frm-contact-add">
+        <form class="pure-form pure-form-stacked" id="frm-contact-add" onsubmit="return false;">
             <div class="contact-input">
                 <label for="frm-name">Name</label>
                 <input id="frm-name" placeholder="Jane Smith"/>
