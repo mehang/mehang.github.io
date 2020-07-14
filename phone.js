@@ -3,6 +3,8 @@ $("#content_dialer").show();
 $("#content_list").hide();
 $("#content_add").hide();
 $("#btn_dialer").css("background", "white");
+$("#btn_contact_list").css("background", "#E6E6E6");
+$("#btn_contact_add").css("background", "#E6E6E6");
 });
 
 $("#btn_dialer").click(function(){
