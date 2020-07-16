@@ -42,3 +42,11 @@
 #btn-clear-dial { background-color: red; }
 #btn-add-contact {background-color: cornflowerblue; }
 #btn-clear-contact {background-color: red;}
+
+
+#gesture_area {
+    background-color: silver;
+    width: 400px;
+    height: 400px;
+
+}

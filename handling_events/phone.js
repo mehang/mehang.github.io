@@ -2,35 +2,54 @@ $(document).ready(function() {
     $("#content_dialer").show();
     $("#content_list").hide();
     $("#content_add").hide();
+    $("#content_gestures").hide();
     $("#btn_dialer").css("background", "white");
     $("#btn_contact_list").css("background", "#E6E6E6");
     $("#btn_contact_add").css("background", "#E6E6E6");
+    $("#btn_test_gestures").css("background", "#E6E6E6");
 });
 
 $("#btn_dialer").click(function(){
     $("#content_dialer").show();
     $("#content_list").hide();
     $("#content_add").hide();
+    $("#content_gestures").hide();
     $(this).css("background", "white");
     $("#btn_contact_list").css("background", "#E6E6E6");
     $("#btn_contact_add").css("background", "#E6E6E6");
+    $("#btn_test_gestures").css("background", "#E6E6E6");
 });
 
 $("#btn_contact_list").click(function(){
     $("#content_dialer").hide();
     $("#content_list").show();
     $("#content_add").hide();
+    $("#content_gestures").hide();
     $("#btn_dialer").css("background", "#E6E6E6");
     $(this).css("background", "white");
     $("#btn_contact_add").css("background", "#E6E6E6");
+    $("#btn_test_gestures").css("background", "#E6E6E6");
 });
 
 $("#btn_contact_add").click(function(){
     $("#content_dialer").hide();
     $("#content_list").hide();
     $("#content_add").show();
+    $("#content_gestures").hide();
     $("#btn_dialer").css("background", "#E6E6E6");
     $("#btn_contact_list").css("background", "#E6E6E6");
+    $(this).css("background", "white");
+    $("#btn_test_gestures").css("background", "#E6E6E6");
+});
+
+$("#btn_test_gestures").click(function(){
+    $("#content_dialer").hide();
+    $("#content_list").hide();
+    $("#content_add").hide();
+    $("#content_gestures").show();
+    $("#btn_dialer").css("background", "#E6E6E6");
+    $("#btn_contact_list").css("background", "#E6E6E6");
+    $("#btn_contact_add").css("background", "#E6E6E6");
     $(this).css("background", "white");
 });
 
@@ -107,3 +126,25 @@ $("#btn-clear-contact").click(function(){
 
 $("#frm-dial").on("submit",function(event){event.preventDefault()});
 $("#frm-contact-add").on("submit",function(event){event.preventDefault()});
+
+var downX;
+var downY;
+
+$("#gesture_area").mousedown(function(e){
+   $("#gesture_output").text("mouse down");
+   console.log(e);
+   downX = e.pageX;
+   downY = e.pageY;
+});
+
+$("#gesture_area").mouseup(function(e){
+    let output;
+    if (downX > e.pageX) {
+        output = "swipe left";
+    } else if (downX < e.pageX) {
+        output = "swipe right";
+    } else if (downX == e.pageX) {
+        output = "mouse up"
+    }
+    $("#gesture_output").text(output);
+});
