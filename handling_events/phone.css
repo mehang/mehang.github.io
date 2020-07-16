@@ -48,5 +48,11 @@
     background-color: silver;
     width: 400px;
     height: 400px;
+}
 
+#swipe_nav {
+    background-color: silver;
+    width: 400px;
+    height: 40px;
+    bottom: 80px;
 }
