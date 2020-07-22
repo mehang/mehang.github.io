@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Blog</title>
     <link rel="stylesheet" href="blog.css"/>
-    <link rel="stylesheet" href="fontawesome.css"/>
+    <link rel="stylesheet" href="all.css"/>
     <link rel="stylesheet"
           href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
           integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
@@ -109,10 +109,9 @@
     <footer role="contentinfo" id="footer">
         <div id="message" role="alert" class="alert-message">
             <p id="message-body"></p>
-<!--            <button class="pure-button" id="btn-message-close" aria-label="Close Button">-->
-<!--                &#10006;-->
-<!--            </button>-->
-            <button class = "pure-button" id="btn-message-close" aria-label="Close Button">&#10006;</button>
+            <button class = "pure-button" id="btn-message-close" aria-label="Close Button"> <i class="fas fa-times"></i> </button>
+        </div>
+            <button class = "pure-button" id="btn-close" aria-label="Close Button">&#10006;</button>
         </div>
         <form class = "pure-form pure-form-stacked" role="form" id="frm_comment">
             <fieldset>
@@ -131,5 +130,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="blog.js"></script>
+<script src="all.js"></script>
 </body>
 </html>
