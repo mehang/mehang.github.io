@@ -21,7 +21,7 @@ tr:nth-child(even) {
 }
 
 #comment_post{
-    background-color: darkcyan;
+    background-color: green;
     color: white;
 }
 
@@ -67,9 +67,15 @@ img{
     /*visibility:hidden;*/
 }
 
-#message, #btn-message-close {
+#message {
     color: red;
 }
+
+#btn-message-close {
+    color: white;
+    background-color: red;
+}
+
 
 #message-body{
     display: inline !important;
