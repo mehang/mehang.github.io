@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <link rel="stylesheet" href="blog.css"/>
+    <link rel="stylesheet" href="fontawesome.css"/>
+    <link rel="stylesheet"
+          href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+          integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
+          crossorigin="anonymous"
+    />
+</head>
+<body>
+<div class="main_container">
+    <header role="banner">
+        <h1 style="text-align: center; color:lightseagreen">A Blog Hosted By Github</h1>
+    </header>
+    <nav role="navigation" class="pure-menu pure-menu-horizontal">
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a href="https://mehang.github.io/assignment4" class="pure-menu-link">Home</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Other Blogs</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Activities</a></li>
+        </ul>
+    </nav>
+    <main role="main">
+        <h1>A Simple Blog</h1>
+        <h2>About me</h2>
+        <p>
+            Hey, everyone. I am Mehang Rai. I am from Nepal, a country situation among Himalayas in South East Asia.
+            As of now, I am a graduate student pursuing Masters in Computer Science at Baylor University, Waco,
+            Texas.
+            Looking from my major, you can tell that I love coding and have been doing so for the last 8 years.
+            I did my undergrad at Pulchowk Campus, Lalipur, Nepal and my experience was really good over there. After
+            my undergrad, I went for industrial experience to enhance my coding skill. But after 2 and half years,
+            I wanted to more academic experience. So, here I am.
+        </p>
+        <h2>Programming/Coding</h2>
+        <h3>What I think about coding?</h3>
+        <p>
+            With the tremendous development in technology, I think it's a must to have some degree of programming
+            knowledge. And it is not that hard to learn. Although the presence of large number of programming
+            languages and frameworks could overwhelm a beginner, the interested person will only need to look at few of
+            those programming languages and frameworks that interests them.
+        </p>
+        <h3>My Favorite Programming Languages/Libraries</h3>
+        <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>React JS</li>
+            <li>VB .Net</li>
+            <li>Django Framework</li>
+        </ul>
+        <h3>Some traits of those programming languages/libraries</h3>
+        <h4>Python</h4>
+        <div class="language_details">
+            <img src="Python.png" alt="A snippet of code written in python." id="python_img"/>
+            <p>
+                Python is one of the most popular programming language in the world. There are a lot of python users out
+                there. A lot of people like it because it resembles pseudocode, which makes it easier to learn and
+                follow through. But being a dynamic language, it can cause problem for some developers to find the bug.
+                However there exist different IDE's like PyCharm which helps to identify and locate the bug easily.
+                Also, the vast amount of open source libraries present on the internet makes our task really easy.\
+            </p>
+        </div>
+        <h4>Java</h4>
+        <div class="language_details">
+            <img src="Java.png" alt="A snippet of code written in java." id="java_img"/>
+            <p>
+                Java is the epitome of object oriented programming. If you want to program in object oriented, you
+                cannot ask for more. Because of its pure object oriented nature, you can implement different design
+                patterns that will make the code much more concise and elegant. It is one of the most popular language
+                in the industry and lot of programmers prefer it. It can also be used in the communication and
+                cybersecurity because it has lot of advance stuff present around.
+            </p>
+        </div>
+        <h4>React JS</h4>
+        <div class="language_details">
+            <img src="ReactJS.png" alt="A snippet of code written in React JS." id="reactjs_img"/>
+            <p>
+                React JS was developed by facebook. It is JavaScript library designed to create becautiful frontends.
+                React JS has been popular nowadays because it is easy to learn. You just need to learn its basic
+                principle, and you can program straightaway with only slight knowledge of JavaScript. Its syntax
+                resembles the HTML syntax so it is quite easy to follow through. It flows the data from parent component
+            </p>
+        </div>
+        <h3>Experience in years in different language/framework</h3>
+        <table id="experience_table">
+            <tr>
+                <th>Programming language/framework</th>
+                <th>Experience(in years)</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>5 years</td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>3 years</td>
+            </tr>
+            <tr>
+                <td>React JS</td>
+                <td>3 years</td>
+            </tr>
+        </table>
+
+    </main>
+    <footer role="contentinfo" id="footer">
+        <div id="message" role="alert" class="alert-message">
+            <p id="message-body"></p>
+            <button class="pure-button" id="btn-message-close" aria-label="Close Button">
+                &#10006;
+            </button>
+        </div>
+        <form class = "pure-form pure-form-stacked" role="form" id="frm_comment">
+            <fieldset>
+                <legend class="legend">Comments</legend>
+                <label for="comment_name">Name</label>
+                <input id="comment_name" class="pure-input-round" />
+                <label for="comment_content">Comment</label>
+                <textarea rows="4" cols="50" id="comment_content"></textarea>
+            </fieldset>
+        </form>
+        <button type="submit" class="pure-button" id="comment_post">Post</button>
+    </footer>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="blog.js"></script>
+</body>
+</html>
