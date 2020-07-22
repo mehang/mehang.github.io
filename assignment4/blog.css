@@ -21,7 +21,7 @@ tr:nth-child(even) {
 }
 
 #comment_post{
-    background-color: cornflowerblue;
+    background-color: darkcyan;
     color: white;
 }
 
@@ -80,7 +80,7 @@ img{
 }
 
 .pure-menu-link {
-    color: dodgerblue  !important;
+    color: darkslateblue  !important;
     font-weight: bold;
 }
 
@@ -93,10 +93,10 @@ h3{
 }
 
 h4{
-    color:forestgreen;
+    color:darkcyan;
 }
 
 th {
-    color: cadetblue;
+    color: darkslateblue;
 }
 
