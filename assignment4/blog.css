@@ -64,7 +64,7 @@ img{
 }
 
 .alert-message{
-    /*visibility:hidden;*/
+    visibility:hidden;
 }
 
 #btn-message-close {
