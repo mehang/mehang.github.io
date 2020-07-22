@@ -67,10 +67,6 @@ img{
     /*visibility:hidden;*/
 }
 
-#message {
-    color: red;
-}
-
 #btn-message-close {
     color: white;
     background-color: red;
