@@ -68,8 +68,7 @@ img{
 }
 
 #btn-message-close {
-    color: white;
-    background-color: red;
+    color: red;
 }
 
 
@@ -100,5 +99,9 @@ h4{
 
 th {
     color: darkslateblue;
+}
+
+.pure-button{
+    background-color: white;
 }
 
