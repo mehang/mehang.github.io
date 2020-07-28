@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Low Vision</title>
+    <link rel="stylesheet" href="phone.css"/>
+    <link rel="stylesheet" href="font-awesome.css"/>
+    <link rel="stylesheet"
+          href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+          integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
+          crossorigin="anonymous"
+    />
+</head>
+<body id="main_body">
+<div style="margin:10px" id="vision_control">
+    <div style="display: flex; justify-content: flex-end">
+        <button class="pure-button btn-tab" id="btn-increase-font">
+            Increase Font Size
+        </button>
+        <button class="pure-button btn-tab" id="btn-decrease-font">
+            Decrease Font Size
+        </button>
+        <button class="pure-button btn-tab" id="btn-change-contrast">
+            Change Contrast
+        </button>
+    </div>
+</div>
+<div class="tab-bar" id="tab_bar">
+    <button class="btn-tab pure-button" id="btn_dialer">Dialer</button>
+    <button class="btn-tab pure-button" id="btn_contact_list">Contact List</button>
+    <button class="btn-tab pure-button" id="btn_contact_add">Add Contact</button>
+    <button class="btn-tab pure-button" id="btn_about_this_project">About This Project</button>
+</div>
+<div id="content">
+    <div class="content-div" id="content_dialer">
+        <h1>Dialer</h1>
+        <form class="pure-form pure-form-stacked" id="frm-dial" onsubmit="return false;">
+            <input class="dial-content-div" id="dial-number"/>
+            <div class="dial-btn-div">
+                <button class="btn-dial pure-button" id="btn-1">1</button>
+                <button class="btn-dial pure-button" id="btn-2">2</button>
+                <button class="btn-dial pure-button" id="btn-3">3</button>
+            </div>
+            <div class="dial-btn-div">
+                <button class="btn-dial pure-button" id="btn-4">4</button>
+                <button class="btn-dial pure-button" id="btn-5">5</button>
+                <button class="btn-dial pure-button" id="btn-6">6</button>
+            </div>
+            <div class="dial-btn-div">
+                <button class="btn-dial pure-button" id="btn-7">7</button>
+                <button class="btn-dial pure-button" id="btn-8">8</button>
+                <button class="btn-dial pure-button" id="btn-9">9</button>
+            </div>
+            <div class="dial-btn-div">
+                <button class="btn-dial pure-button" id="btn-astr">*</button>
+                <button class="btn-dial pure-button" id="btn-0">0</button>
+                <button class="btn-dial pure-button" id="btn-hash">#</button>
+            </div>
+            <div class="dial-func-btns">
+                <button class="dial-func-btn pure-button" id="btn-dial">Dial</button>
+                <button class="dial-func-btn pure-button" style="color:white" id="btn-clear-dial">Clear</button>
+            </div>
+        </form>
+    </div>
+    <div class="content-div" id="content_list">
+        <h1>Contact List</h1>
+        <div class="contact-list-div">
+            <button class="pure-button" id="btn-robert-drake">Robert Drake</button>
+            <button class="pure-button" id="btn-emma-frost">Emma Frost</button>
+            <button class="pure-button" id="btn-doreen-green">Doreen Green</button>
+        </div>
+        <div class="contact-list-div">
+            <button class="pure-button" id="btn-jean-grey">Jean Grey</button>
+            <button class="pure-button" id="btn-james-howlett">James Howlett</button>
+            <button class="pure-button" id="btn-ororo-munroe">Ororo Munroe</button>
+        </div>
+        <div class="contact-list-div">
+            <button class="pure-button" id="btn-katherine-pryde">Katherine Pryde</button>
+            <button class="pure-button" id="btn-piotr-rasputin">Piotr Rasputin</button>
+            <button class="pure-button" id="btn-scott-summers">Scott Summers</button>
+        </div>
+        <div class="contact-list-div">
+            <button class="pure-button" id="btn-kurt-wagner">Kurt Wagner</button>
+            <button class="pure-button" id="btn-warren-worthington">Warren Worthington</button>
+            <button class="pure-button" id="btn-charles-xavier">Charles Xavier</button>
+        </div>
+    </div>
+    <div class="content-div" id="content_add">
+        <h1>Add Contact</h1>
+        <form class="pure-form pure-form-stacked" id="frm-contact-add" onsubmit="return false;">
+            <div class="contact-input">
+                <label for="frm-name">Name</label>
+                <input id="frm-name" placeholder="Jane Smith"/>
+            </div>
+            <div class="contact-input">
+                <label for="frm-phone">Phone number</label>
+                <input id="frm-phone" placeholder="123-456-7890"/>
+            </div>
+            <div class="contact-input">
+                <label for="frm-email">Email address</label>
+                <input id="frm-email" placeholder="jane.smith@colorado.edu"/>
+            </div>
+            <div class="contact-frm-btn">
+                <button class="pure-button" id="btn-add-contact">Add Contact</button>
+                <button class="pure-button" id="btn-clear-contact" style="color:white">Clear</button>
+            </div>
+        </form>
+    </div>
+    <div class="content-div" id="content_about_this_project">
+        <h1>About This Project</h1>
+        <h2>Testing of the magnifier</h2>
+        Since the video recording did not capture the magnified view, I had to write down my experience.
+        A magnifying tool is just a simple software that increase the size of the content, similar to magnifying glass.
+        Windows Operating System provides a very good magnifier tool. It comes pre-installed within the operating
+        system.
+        It was interesting that along with different scale of magnifying it gave different mode of magnification:
+        <ul>
+            <li>Full screen - Magnifies the content and displays it on the whole screen</li>
+            <li>Lens - Magnifies the content surrounding the cursor and displays only on the rectangular display that
+                follows
+                the cursor
+            </li>
+            <li>Docked - Magnifies the portion surrounding the cursor and display on a separate display docked at the
+                top of
+                the screen
+            </li>
+        </ul>
+        I used different magnification scale and its mode for reading a blog of soccer news on <a
+            href="https://goal.com">https://goal.com</a>.
+        I used it for quite sometime, and since I am used to looking at normal mode i.e. 100%, my eye was strained
+        at higher zoom level because of the magnified texts and icons. I also had to move around the cursor a lot because only a small portion
+        of content could be contained in the magnified view. Also, since I didn't have a mouse I also used to
+        continuously press the arrow keys to navigate webpage sometimes, as the touchpad did not allowed to do so.
+        A 300% zoom was too much for me as I did not get enough context in that view, but I would say for low vision
+        people it might be useful although a bit time consuming. The higher the zoom level, the more scrolling there is.
+        Out of the three modes, I liked the docked mode because it gives the user a point of reference in regular webpage
+        through cursor and separates the zoomed view on the top dock of the screen, which is wider than the lens mode.
+        The lens mode is good but I lost track of content when switching in between lines as the magnified view is
+        overlayed
+        on top of the cursor. In full screen mode, I did not seem to have a point of reference as a whole and many
+        things at higher zoom level were
+        clipped away unlike in other two mode where the non-magnified section are still visible. But at the end, I would like to
+        say that this magnifying tool is
+        really good and I think it will definitely help low vision people, but I have concern regarding how it will be helpful in viewing video will be
+        helpful because a lot of content will either be non-magnified or clipped out. I hope that will be addressed in
+        the
+        future. The picture from my testing are present over here. <a
+            href="https://drive.google.com/drive/folders/13BbIE4bGKzgbdIP33KwVeKT5DPi_bSh0?usp=sharing">https://drive.google.com/drive/folders/13BbIE4bGKzgbdIP33KwVeKT5DPi_bSh0?usp=sharing</a>.
+        <h2>Testing of the high-contrast</h2>
+        Microsoft windows also provides toggling of high contrast. I test it for reading the blog and I really liked
+        it.
+        All the white colors were inverted to black, so it really relaxed my eyes and also all the contents were quite
+        distinguishable. For someone with color blindness or low vision, this could be really helpful. The contrasting color
+        could save time in finding the content or web element. The picture from my testing are present over here.<a
+            href="https://drive.google.com/drive/folders/13BbIE4bGKzgbdIP33KwVeKT5DPi_bSh0?usp=sharing">https://drive.google.com/drive/folders/13BbIE4bGKzgbdIP33KwVeKT5DPi_bSh0?usp=sharing</a>.
+        <h2>Features added to this site for low vision users</h2>
+        To assist the users with low vision, zooming features was added to the application. There are two buttons
+        at the top of the website for increasing and decreasing the font size. The magnification is not limited to
+        certain
+        choice. As long as the button is clicked the content will keep growing or shrinking in size. Right now, limit
+        has
+        not been set as it is difficult to assume what is the right limit for low vision users because they can have
+        varying
+        degree of visions.
+
+        Along with zooming feature, high-contrast feature was added too. It helps to easily distinguish/differentiate
+        the
+        background
+        color with the color of contents in the front. So, any item or content can be pointed to immediately. A
+        high-contrast
+        can also aid some of the color blind people because high-contrast mode could turn into something more
+        perceivable
+        not
+        only for
+        the low vision users but for the color blind people as well.
+        Since these two functions could be combined, users could combine and use them according to their preference.
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="phone.js"></script>
+<script src="font-awesome.js"></script>
+</body>
+</html>

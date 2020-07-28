@@ -1,0 +1,89 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+#main_body{
+    font-size: 16px;
+}
+
+.inverted_main_body {
+    background-color:#000000 !important;
+    color:#FFEC09 !important;
+}
+
+.inverted_button button{
+    color:#46012F !important;
+    background-color: #FFFF33 !important;
+}
+
+.invert-img{
+    filter: invert(100%);
+}
+
+.inverted input{
+    color:black;
+}
+
+.inverted-tab-bar {
+    background-color: palevioletred !important;
+}
+
+.inverted-success-btn{
+    color:white !important;
+}
+
+.inverted-contact-list button{
+    background-color: deepskyblue;
+    color:white;
+}
+
+.tab-bar {background-color: grey;}
+.btn-tab {margin-top: 10px; margin-left: 10px;}
+.btn-dial {
+    /*height: 60px; */
+    width: 30.33%;
+    margin-top: 10px}
+.content-div {
+    margin: 10px;
+}
+#content_dialer {
+    width:330px;
+}
+#dial-number {
+    width:100%;
+    margin-bottom: 10px;
+}
+.dial-btn-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 22px;
+}
+.dial-func-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 14px;
+    font-size: 18px;
+}
+.dial-func-btn {
+    /*height: 60px;*/
+    width:47%;
+    font-weight: bold;
+}
+.contact-input {
+    margin-top: 14px;
+}
+.contact-frm-btn{
+    margin-top: 14px;
+    font-weight: bold;
+}
+.contact-list-div {
+    margin-top:10px
+}
+
+#btn-dial {background-color: limegreen}
+#btn-clear-dial { background-color: red; }
+#btn-add-contact {background-color: cornflowerblue; }
+#btn-clear-contact {background-color: red;}

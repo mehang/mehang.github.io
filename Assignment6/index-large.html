@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Low Vision</title>
+    <link rel="stylesheet" href="phone.css"/>
+    <link rel="stylesheet"
+          href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+          integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
+          crossorigin="anonymous"
+    />
+</head>
+<body>
+<div class="tab-bar" id="tab_bar">
+    <button class="btn-tab pure-button" id="btn_dialer">Dialer</button>
+    <button class="btn-tab pure-button" id="btn_contact_list">Contact List</button>
+    <button class="btn-tab pure-button" id="btn_contact_add">Add Contact</button>
+</div>
+<div id="content">
+    <div class="content-div" id="content_dialer">
+        <h1>Dialer</h1>
+        <form class="pure-form pure-form-stacked" id="frm-dial" onsubmit="return false;">
+            <input class="dial-content-div" id="dial-number"/>
+            <div class="dial-btn-div">
+                <button class="btn-dial pure-button" id="btn-1">1</button>
+                <button class="btn-dial pure-button" id="btn-2">2</button>
+                <button class="btn-dial pure-button" id="btn-3">3</button>
+            </div>
+            <div class="dial-btn-div">
+                <button class="btn-dial pure-button" id="btn-4">4</button>
+                <button class="btn-dial pure-button" id="btn-5">5</button>
+                <button class="btn-dial pure-button" id="btn-6">6</button>
+            </div>
+            <div class="dial-btn-div">
+                <button class="btn-dial pure-button" id="btn-7">7</button>
+                <button class="btn-dial pure-button" id="btn-8">8</button>
+                <button class="btn-dial pure-button" id="btn-9">9</button>
+            </div>
+            <div class="dial-btn-div">
+                <button class="btn-dial pure-button" id="btn-astr">*</button>
+                <button class="btn-dial pure-button" id="btn-0">0</button>
+                <button class="btn-dial pure-button" id="btn-hash">#</button>
+            </div>
+            <div class="dial-func-btns">
+                <button class="dial-func-btn pure-button" id="btn-dial">Dial</button>
+                <button class="dial-func-btn pure-button" id="btn-clear-dial">Clear</button>
+            </div>
+        </form>
+    </div>
+    <div class="content-div" id="content_list">
+        <h1>Contact List</h1>
+        <div class="contact-list-div">
+            <button class="pure-button" id="btn-robert-drake">Robert Drake</button>
+            <button class="pure-button" id="btn-emma-frost">Emma Frost</button>
+            <button class="pure-button" id="btn-doreen-green">Doreen Green</button>
+        </div>
+        <div class="contact-list-div">
+            <button class="pure-button" id="btn-jean-grey">Jean Grey</button>
+            <button class="pure-button" id="btn-james-howlett">James Howlett</button>
+            <button class="pure-button" id="btn-ororo-munroe">Ororo Munroe</button>
+        </div>
+        <div class="contact-list-div">
+            <button class="pure-button" id="btn-katherine-pryde">Katherine Pryde</button>
+            <button class="pure-button" id="btn-piotr-rasputin">Piotr Rasputin</button>
+            <button class="pure-button" id="btn-scott-summers">Scott Summers</button>
+        </div>
+        <div class="contact-list-div">
+            <button class="pure-button" id="btn-kurt-wagner">Kurt Wagner</button>
+            <button class="pure-button" id="btn-warren-worthington">Warren Worthington</button>
+            <button class="pure-button" id="btn-charles-xavier">Charles Xavier</button>
+        </div>
+    </div>
+    <div class="content-div" id="content_add">
+        <h1>Add Contact</h1>
+        <form class="pure-form pure-form-stacked" id="frm-contact-add" onsubmit="return false;">
+            <div class="contact-input">
+                <label for="frm-name">Name</label>
+                <input id="frm-name" placeholder="Jane Smith"/>
+            </div>
+            <div class="contact-input">
+                <label for="frm-phone">Phone number</label>
+                <input id="frm-phone" placeholder="123-456-7890"/>
+            </div>
+            <div class="contact-input">
+                <label for="frm-email">Email address</label>
+                <input id="frm-email" placeholder="jane.smith@colorado.edu"/>
+            </div>
+            <div class="contact-frm-btn">
+                <button class="pure-button" id="btn-add-contact">Add Contact</button>
+                <button class="pure-button" id="btn-clear-contact">Clear</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="phone.js"></script>
+</body>
+</html>
