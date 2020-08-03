@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+    <title>
+        Calculator Demo Using Single Switch
+    </title>
+    <link rel="stylesheet" href="calculator.css" type="text/css">
+</head>
+<body>
+<div id="calculator">
+    <h1>Single Switch Calculator</h1>
+    <div class="calculator_row">
+        <input id="number_input">
+    </div>
+    <div id="row_one" class="calculator_row">
+        <button id="button7" class="calcButton row1 col1">7</button>
+        <button id="button8" class="calcButton row1 col2">8</button>
+        <button id="button9" class="calcButton row1 col3">9</button>
+        <button id="buttonDivide" class="calcButton row1 col4 function">/</button>
+    </div>
+    <div id="row_two" class="calculator_row">
+        <button id="button4" class="calcButton row2 col1">4</button>
+        <button id="button5" class="calcButton row2 col2">5</button>
+        <button id="button6" class="calcButton row2 col3">6</button>
+        <button id="buttonMultiply" class="calcButton row2 col4 function">*</button>
+    </div>
+    <div id="row_three" class="calculator_row">
+        <button id="button1" class="calcButton row3 col1">1</button>
+        <button id="button2" class="calcButton row3 col2">2</button>
+        <button id="button3" class="calcButton row3 col3">3</button>
+        <button id="buttonAdd" class="calcButton row3 col4 function">+</button>
+    </div>
+    <div id="row_four" class="calculator_row">
+        <button id="button0" class="calcButton row4 col1">0</button>
+        <button id="buttonClear" class="calcButton row4 col2 meta">C</button>
+        <button id="buttonEquals" class="calcButton row4 col3 meta">=</button>
+        <button id="buttonSubtract" class="calcButton row4 col4 function">-</button>
+    </div>
+</div>
+<div>
+    <button id="buttonSelect" title="This is the only switch.">Select</button>
+</div>
+<br/>
+<a href="two-switch-calculator.html">Link to calculator based on two switch</a>
+
+<div id="comments">
+    <h2>About this app</h2>
+    <p>
+        I have created a single switch interface for the calculator application. The design has been done in such
+        a way to mimic a single switch interface which can be used by people with disabilities to communicate with
+        the computing device. Since there is only one switch to control the calculator application interface, moving
+        window approach was used, which moves continuous using timers along the row or different buttons. This enables
+        the user to navigate to any desired buttons and input the desired equation. For the purpose of simulating real
+        scenario, the "Enter" key was used as the single switch for interaction.
+    </p>
+    <h3>Instructions for using the app</h3>
+    <p>
+        In this app, interaction can be done using the select button or the "Enter" key in the keyboard. Since in a real
+        life scenario, a physical switch will be used for the interaction, so the use of "Enter" key will be a much more
+        accurate simulation. In the app, there is a moving window which moves constantly across rows and different
+        elements.
+        Initially the window moves in between rows i.e. from one row to another. When the switch is pressed on a desired
+        focused row highlighted by orange color, the focus will now be shifted within the row and a green focus will
+        continue
+        to move among the different buttons of the row continuously. When the switch is clicked again, either the
+        calculator
+        button is clicked and input is being made or if the focus is on the row itself then the navigation will continue
+        over rows i.e. to next row in a cycle. This latter option was added to allow users to correct the action of
+        mistakenly selecting
+        an incorrect row.
+    </p>
+    <p>
+        In addition to this single switch interface, a 2 switch interface was also designed to compare the performance
+        of the
+        two. The 2 switch interface contains of two buttton: Next and Select. For the sake of replicating simulation,
+        "Spacebar" key and "Enter" key of keyboard could be also used in place of Next and Select button respectively.
+        The Next button is pressed when you want to navigate among different rows or different element i.e. buttons, and
+        the
+        Select button is pressed in order to enter the focus within a row or click a selected button. Similar to
+        previous
+        design, when a green focus is within a row, this escape the button selection mode and we can continue to
+        navigate
+        between different rows.
+    </p>
+    <h3>Test details</h3>
+    <p>
+        Two different kinds of test were performed. Firstly the speed of the moving window was varied by changing the
+        interval
+        value in the timer. Different values of timer were used in this test: 500ms, 1000ms and 1500ms. In the second
+        test,
+        the single switch interface was compared with the similar window based interface with two keys: Select and Next.
+        Comparisons were made based on the number of errors made and speed of the experiment. Altogether 6 different
+        expressions
+        were used for testing. The calculator interface doesn't have an undo button so, whenever a mistake is made then,
+        the user has to navigate to the Clear button indicate by "C" to clear everything and start all over again. This
+        whole correction time was also added to the total time taken to calculate that expression.
+    </p>
+    <h3>Result</h3>
+    <div>
+        The result for different expressions were calculated on different window interval speed:
+        <table>
+            <tr>
+                <th>Expression</th>
+                <th> Time taken (Window speed=500 ms)</th>
+                <th>Time taken (Window speed=1000 ms)</th>
+                <th>Time taken (Window speed=1500 ms)</th>
+            </tr>
+            <tr>
+                <td>98*10-2=</td>
+                <td>40 seconds, 2 errors</td>
+                <td>57 seconds, 0 errors</td>
+                <td>49 seconds, 0 errors</td>
+            </tr>
+            <tr>
+                <td>7*4+36/2=</td>
+                <td>1 minute 56 seconds, 3 errors</td>
+                <td>1 minute 1 seconds, 0 errors</td>
+                <td>59 seconds, 0 errors</td>
+            </tr>
+            <tr>
+                <td>19+52-3+1-4=</td>
+                <td>1 minute 5 seconds, 3 errors</td>
+                <td>1 minute 14 seconds, 0 errors</td>
+                <td>1 minute 25 seconds, 1 error</td>
+            </tr>
+            <tr>
+                <td>4400/11-5*20+96=</td>
+                <td>53 seconds, 0 errors</td>
+                <td>1 minute 52 seconds, 2 errors</td>
+                <td>4 minute 3 seconds, 3 errors</td>
+            </tr>
+            <tr>
+                <td>12*33*44/2/2=</td>
+                <td>1 minute 8 seconds, 1 error</td>
+                <td>1 minute 10 seconds 0 errors</td>
+                <td>1 minute 20 seconds 0 errors</td>
+            </tr>
+            <tr>
+                <td>67890-54321*4/2=</td>
+                <td>3 minutes 9 seconds 4 errors</td>
+                <td>1 minute 32 seconds 0 error</td>
+                <td>3 minutes 40 seconds 1 error</td>
+            </tr>
+        </table>
+        <p>
+            Looking at the results, it can be seen that with window interval of 500 ms faster speed can be obtained,
+            but at the same time there is more chance of making errors. Since the transition of focus is fast, there is
+            high chance that a wrong button or row will be triggered. The correction of this action adds an extra amount
+            of time because the process might have to be repeated. Similarly, for interval of 1500 ms, few number of
+            errors were made, but the overall speed was slow because the transition of focus is triple the times at
+            500 ms. In most of the case, this came out to be the slowest among the three options. There is a low chance
+            of making an error, but provided there is an error then due to the process for correction, the total time
+            increases by a significant amount. The interval of 1000 ms seems to balance the trade-off between speed and
+            accuracy. It is faster than 1500 ms while maintaining the number of errors to a low number. Also whenever
+            there was error, the amount of time taken for correction was relatively low because of its relatively faster
+            transition. This shows that the window interval needs to be defined according to user capability.
+        </p>
+    </div>
+    <div>
+        Since the window interval of 1000 ms was found out to be efficient, for the next experiment the single switch
+        interface was compared against the two-switch interface.
+        <table>
+            <tr>
+                <th>Expression</th>
+                <th> Time taken (Single switch interface)</th>
+                <th>Time taken (Two switch interface)</th>
+            </tr>
+            <tr>
+                <td>98*10-2=</td>
+                <td>57 seconds, 0 errors</td>
+                <td>40 seconds, 0 errors</td>
+            </tr>
+            <tr>
+                <td>7*4+36/2=</td>
+                <td>1 minute 1 seconds, 0 errors</td>
+                <td>39 second, 0 errors</td>
+            </tr>
+            <tr>
+                <td>19+52-3+1-4=</td>
+                <td>1 minute 11 seconds, 0 errors</td>
+                <td>40 seconds, 0 errors</td>
+            </tr>
+            <tr>
+                <td>4400/11-5*20+96=</td>
+                <td>1 minute 50 seconds, 2 errors</td>
+                <td>1 minute 11 seconds, 1 error</td>
+            </tr>
+            <tr>
+                <td>12*33*44/2/2=</td>
+                <td>1 minute 10 seconds 0 errors</td>
+                <td>49 seconds 0 errors</td>
+            </tr>
+            <tr>
+                <td>67890-54321*4/2=</td>
+                <td>1 minute 34 seconds 0 errors</td>
+                <td>1 minutes 5 seconds 0 errors</td>
+            </tr>
+        </table>
+        <p>
+            From the result above it can be seen that the two switch interface was comparatively faster than the
+            single switch interface. Navigation was comparatively quicker, the purpose of navigation and selection was
+            segregated among the two different switches. The navigation in single switch was automated by the transition
+            interval due to which the transition of focus was entirely dependent on the system, thus resulting in slow
+            action unlike the two switch interface where user had the freedom on the speed of navigation. However the
+            single switch interface provided a simple interface. Use of only a single button could be helpful for the
+            people who have difficulty in using two switches. In terms of number of errors the two switch interface was
+            better, because of the same reason that it gives more freedom to user. But, the number of errors was quite
+            low for the single switch as well and that is due to the favorable window speed for the user.
+        </p>
+
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+<script src="calculator.js" type="text/javascript"></script>
+</body>
+</html>
